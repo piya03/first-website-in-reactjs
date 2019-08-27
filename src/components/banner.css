@@ -1,0 +1,59 @@
+
+  .imageSlider {
+    background: orangered;
+    min-height: 70vh;
+    flex: 0 0 70%;
+    /* background: url(https://www.w3schools.com/w3css/img_snowtops.jpg)center/cover no-repeat; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn1 {
+      /* position: absolute;
+      padding: 8px 21px;
+      border-radius: 5px;
+      box-shadow: 2px 4px grey;
+      border: 2px solid rebeccapurple;
+      font-size: 24px;
+      outline: none;
+      font-weight: 600;
+      color: crimson; */
+      font-size: 90px;
+      color: #fff;
+      cursor: pointer;
+
+  }
+  .prevbtn {
+    /* top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%); */
+    /* position: absolute;
+    right: 0; */
+  }
+  .nextbtn {
+    /* top: 50%;
+    right: 0px;
+    transform: translate(50%, -50%); */
+    position: absolute;
+    right: 0;
+  }
+  .btn1:active {
+    /* background : gray;
+    box-shadow : 1px 1px gray; */
+  }
+  .btn1:hover{
+    /* background : green;
+    color : white;
+    box-shadow: 3px 4px 3px grey; */
+  }
+
+  @media only screen and (max-width: 511px) {
+    .btn1 {
+        font-size: 40px;
+    }
+
+  }

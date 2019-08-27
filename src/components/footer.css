@@ -1,0 +1,119 @@
+.footer-container {
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 35px 40px;
+    cursor: pointer;
+}
+
+.first-section img {
+    height: 70px;
+    width: 80px;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-row-gap: 8px;
+}
+
+li:first-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mobile-no-container,
+.mail-container,
+.website-url {
+    display: flex;
+    justify-content: start;
+}
+.contact-us {
+    list-style: none;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-globe {
+    align-self: center;
+    margin-right: 12px;
+    padding-top: 4px;
+}
+
+.social-media-icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 12px;
+}
+
+.social-media-icons li {
+    border-radius: 50%;
+    height: 50px;
+    border: 2px solid white;
+    width: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+@media only screen and (max-width: 1018px) {
+    .social-media-icons {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 10px;
+    }
+    .social-media-icons li {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        color: white;
+        text-align: center;
+        line-height: 2.5;
+        outline: none;
+        font-size: 12px;
+    }
+    .footer-container {
+        font-size: 12px;
+    }
+    li:first-child {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 50%);
+        grid-row-gap: 15px;
+    }
+    .social-media-icons {
+        grid-template-columns: repeat(5, auto);
+        grid-column-gap: 17px;
+        margin: 0;
+    }
+    .fifth-section {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .contact-us {
+        margin-bottom: 5px;
+    }
+
+    .first-section img {
+        margin-top: 0px;
+    }
+    .mobile-no-container,
+    .mail-container,
+    .website-url {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 0;
+}
+ .mobile-no-container {
+     margin-top: 5px;
+ }
+}
